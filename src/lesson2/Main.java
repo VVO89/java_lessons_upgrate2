@@ -11,10 +11,10 @@ public class Main extends Exception{
 
         mas[0][0] = "1";
         mas[0][1] = "2";
-        mas[1][0] = "3f";
-        mas[1][1] = "6w";
-        mas[2][0] = "3f";
-        mas[2][1] = "6w";
+        mas[1][0] = "0";
+        mas[1][1] = "0";
+        mas[2][0] = "0";
+        mas[2][1] = "0";
 
         try {
             doAction(mas);
