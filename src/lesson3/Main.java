@@ -25,20 +25,17 @@ public class Main {
         person1.add("12345");
         person1.add("123456");
 
-        tel1.setNewFamily("Вдовенко");
         tel1.add(person1);
 
         Person person2 = new Person("Иванов");
         person2.add("7653");
 
-        tel1.setNewFamily("Иванов");
         tel1.add(person2);
 
         Person person3 = new Person("Петров");
         person3.add("1");
         person3.add("2");
 
-        tel1.setNewFamily("Иванов");
         tel1.add(person3);
 
         tel1.get("Вдовенко");

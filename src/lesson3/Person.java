@@ -5,7 +5,6 @@ import java.util.HashMap;
 
 public class Person {
 
-    //private HashMap<String,String> CollectionNumber = new HashMap<>();
     private String family;
     private ArrayList<String> arrayNumber = new ArrayList<>();
 
