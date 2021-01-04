@@ -7,20 +7,20 @@ public class TelephoneDirectory {
 
     private HashMap<String, ArrayList> telDirectory = new HashMap<>();
 
-    public void add(Person persons){
-        telDirectory.put(persons.getFamily(),persons.getArrayNumber());
+    public void add(String surname, ArrayList<String> arrayNumber){
+        telDirectory.put(surname,arrayNumber);
     }
 
-    public void get(String newFamily){
+    public void get(String surname){
 
-        ArrayList<String> search_key = telDirectory.get(newFamily);
+        ArrayList<String> search_key = telDirectory.get(surname);
 
         if (search_key == null){
             return;
         }
 
         for (int i = 0; i < search_key.size(); i++) {
-            System.out.printf("Фамилия: %s; Телефонный номер: %s%n",newFamily,search_key.get(i));
+            System.out.printf("Фамилия: %s; Телефонный номер: %s%n",surname,search_key.get(i));
         }
 
     }

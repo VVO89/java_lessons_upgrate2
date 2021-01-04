@@ -17,28 +17,35 @@ public class Main {
 
         //2. телефонный справочник
         System.out.println("Второе задание:");
+        // реализовать можно было через отдельный класс Person с хранением фамилии и номеров телефонов
+        // но смысл от этого не меняется
         // добавим тестовые данные
-        // создаем людей с их номерами телефонов и добавляем/ поулчаем данные по фамилии
-        TelephoneDirectory tel1 = new TelephoneDirectory();
+        // 1 фамилия
+        String surname1 = "Вдовенко";
+        ArrayList<String> surnameTel1 = new ArrayList<>();
+        surnameTel1.add("12345");
+        surnameTel1.add("123456");
 
-        Person person1 = new Person("Вдовенко");
-        person1.add("12345");
-        person1.add("123456");
+        // 2 фамилия
+        String surname2 = "Иванов";
+        ArrayList<String> surnameTel2 = new ArrayList<>();
+        surnameTel2.add("7653");
 
-        tel1.add(person1);
+        // 3 фамилия
+        String surname3 = "Петров";
+        ArrayList<String> surnameTel3 = new ArrayList<>();
+        surnameTel3.add("1");
+        surnameTel3.add("2");
 
-        Person person2 = new Person("Иванов");
-        person2.add("7653");
+        TelephoneDirectory tel = new TelephoneDirectory();
 
-        tel1.add(person2);
+        // добавляем в телефонный справочник
+        tel.add(surname1,surnameTel1);
+        tel.add(surname2,surnameTel2);
+        tel.add(surname3,surnameTel3);
 
-        Person person3 = new Person("Петров");
-        person3.add("1");
-        person3.add("2");
-
-        tel1.add(person3);
-
-        tel1.get("Вдовенко");
+        // получаем из справочника номера телефонов
+        tel.get("Вдовенко");
 
     }
 
